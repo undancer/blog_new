@@ -2,6 +2,8 @@
 title: 创建React&electron项目
 date: 2018-09-05 18:08:55
 tags:
+  - React
+  - electron
 ---
 参考：
   1. https://reactjs.org
