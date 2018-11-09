@@ -1,13 +1,18 @@
 html, body {
   font-size: 16px;
   font-weight: 300;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+  font-family: "Microsoft Yahei","Helvetica Neue","PingFang SC",Arial,"Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
 }
 body {
   color: @m-black;
   line-height: 1.8rem;
   margin: 0;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
 }
 
 .home-menu {
@@ -72,7 +77,9 @@ body {
       padding: 4px 15px;
       color: inherit;
       &:after {
-        content: ' ';
+        content: '';
+        display: inline;
+        vertical-align: middle;
       }
       &:focus {
         background-color: #fff;
@@ -89,6 +96,7 @@ body {
   margin: 0 auto;
   max-width: 1000px;
   min-height: calc(~"100vh - 120px");
+
   @media screen and (min-width: @xl-width) {
     max-width: 1200px;
   }
@@ -101,6 +109,10 @@ body {
     margin: 10px;
     padding: 10px 0;
     border-top: none;
+    .post-title {
+      position: relative;
+    }
+
     .post-excerpt {
       color: @gray-light;
       @media screen and (max-width: @sm-width) {
@@ -108,16 +120,24 @@ body {
       }
     }
     .post-footer {
-      font-size: 12px;
+      font-size: 14px;
       position: relative;
       padding-right: 60px;
       min-height: 30px;
+      a {
+        font-weight: 300;
+        display: block;
+        padding: 2px 6px;
+        line-height: 1rem;
+      }
     }
     .title {
       line-height: 1.8rem;
+      display: block;
+      padding-right: 64px;
       h2 {
         font-size: 1.2rem;
-        font-weight: normal;
+        font-weight: 300;
         @media screen and (max-width: @sm-width) {
           font-size: 1rem;
         }
@@ -132,17 +152,18 @@ body {
       .index-tag-list-item {
         margin-right: 5px;
         color: @gray-light;
-        padding: 2px 5px;
-        background-color: @bg-gray;
         border-radius: 2px;
-        display: inline;
+        display: inline-block;
         list-style: none;
+        border: 1px solid rgba(0,0,0,.06);
         &:hover {
           background-color: @bg-gray-hover;
         }
       }
     }
     .time {
+      top: 0;
+      font-size: 14px;
       color: @gray-light;
     }
   }
@@ -339,7 +360,7 @@ body {
   font-size: 0;
   margin: 10px auto;
   max-width: @post-width;
-  padding: 0 10px;
+  padding: 0 60px;
   position: relative;
   .post-nav-item {
     display: inline-block;
@@ -350,23 +371,16 @@ body {
     vertical-align: top;
     width: 49.5%;
 
-    span {
-      display: inline-block;
-      position: absolute;
-    }
     a {
-      margin-left: 20px;
       display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
     }
   }
   .post-nav-prev {
     text-align: right;
-    a {
-      margin-right: 20px;
-    }
-    span {
-      right: 0;
-    }
   }
   @media screen and (max-width: @sm-width) {
     display: none;
@@ -376,7 +390,7 @@ body {
 .toc-article {
   display: none;
   @media screen and (min-width: @xl-width) {
-    max-height: calc(~"100vh - 150px");
+    max-height: calc(~"100vh - 80px");
     position: fixed;
     top: 60px;
     font-size: 13px;
@@ -385,7 +399,8 @@ body {
     margin-left: 1050px;
     overflow-y: auto;
     border-radius: 4px;
-    background-color: #f0f8ff;
+    color: white;
+    background-color: @bg-dark;
   }
   ol,
   ul {
@@ -475,4 +490,32 @@ body {
       }
     }
   }
+}
+
+.footer {
+  .footer-link {
+    &:after {
+      content: "|";
+      display: inline;
+      margin:  0 5px;
+    }
+    
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.photos {
+  .photo {
+    margin-bottom: 12px;
+  }
+
+}
+
+.video-container {
+  width: 100%;
+  height: 400px;
 }
