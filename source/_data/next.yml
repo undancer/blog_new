@@ -119,6 +119,7 @@ index_with_subtitle: false
 menu:
   home: / || home
   # about: /about/ || user
+  book: /book/ || book
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
