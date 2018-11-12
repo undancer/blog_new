@@ -81,3 +81,7 @@ deploy:
   type: git
   repo:
     github: git@github.com:undancer/undancer.github.io.git
+
+# Include redirects file
+include:
+  - _redirects
