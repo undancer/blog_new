@@ -28,3 +28,36 @@ npx create-react-app my-app --scripts-version=react-scripts-ts
 
 左侧第三方，右侧官方
 ![](目录对比图.png)
+
+# 注意事项
+
+微软官方认为第三方插件默认情况下做了太多的事情，所以需要[修改默认设置](https://github.com/Microsoft/TypeScript-React-Starter#overriding-defaults)
+
+官方原话如下：
+
+The TSLint configuration that react-scripts-ts sets us up with is a bit overzealous.
+Let's fix that up.
+
+```diff
+ {
+-  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
++  "extends": [],
++  "defaultSeverity": "warning",
+   "linterOptions": {
+     "exclude": [
+       "config/**/*.js",
+       "node_modules/**/*.ts"
+     ]
+   }
+ }
+```
+
+[Configuring TSLint](https://palantir.github.io/tslint/usage/configuration/) is out of the scope of this starter, but you should feel free to experiment with something that works for you.
+
+
+对比发现官方原生支持的并没有此类状况。
+
+参考：
+ * https://github.com/facebook/create-react-app
+ * https://github.com/wmonk/create-react-app-typescript
+ * https://github.com/Microsoft/TypeScript-React-Starter
