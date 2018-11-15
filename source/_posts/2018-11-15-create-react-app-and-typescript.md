@@ -2,6 +2,8 @@
 title: create-react-app and typescript
 date: 2018-11-15 09:13:43
 tags:
+  - create-react-app
+  - typescript
 ---
 
 阅读[create-react-app](https://github.com/facebook/create-react-app)源码时发现其官方在追加了[typescript的支持](https://github.com/facebook/create-react-app/commit/b50590f7f42c75ca653fb6f831216c09c34a0f74#diff-f9867c1e09ced1328f2ccdac4afac4a5)，在此之前一直是第三方支持[create-react-app-typescript](https://github.com/wmonk/create-react-app-typescript)
