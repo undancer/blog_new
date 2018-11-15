@@ -8,15 +8,17 @@ tags:
 
 这里简单对比二者的区别
 
+<!-- more -->
+
 # 初始化方式
 
 ```bash
-// 官方最新支持的
+# 官方最新支持的
 npx create-react-app my-app --typescript
 ```
 
 ```bash
-// 第三方支持的
+# 第三方支持的
 npx create-react-app my-app --scripts-version=react-scripts-ts
 ```
 
