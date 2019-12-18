@@ -123,6 +123,7 @@ menu:
   home: / || home
   #about: /about/ || user
   book: /book/ || book
+  oni: /oni/ || book
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
