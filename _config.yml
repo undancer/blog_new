@@ -92,3 +92,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# Include/Exclude Files/Folders
+include:
+  - "_redirects"
