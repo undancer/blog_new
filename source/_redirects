@@ -2,3 +2,4 @@
 https://undancer.netlify.com/* https://undancer.com/:splat 301!
 
 /book/* https://book.undancer.com/:splat 301!
+/oni/* https://oni.undancer.com/:splat 301!
