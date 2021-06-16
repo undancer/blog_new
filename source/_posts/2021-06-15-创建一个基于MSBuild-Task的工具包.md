@@ -9,3 +9,4 @@ tags:
 2. https://docs.microsoft.com/zh-cn/visualstudio/msbuild/task-writing?view=vs-2019
 3. https://docs.microsoft.com/zh-cn/nuget/create-packages/creating-a-package
 4. https://docs.microsoft.com/zh-cn/nuget/reference/msbuild-targets#pack-scenarios
+5. https://natemcmaster.com/blog/2017/07/05/msbuild-task-in-nuget/
